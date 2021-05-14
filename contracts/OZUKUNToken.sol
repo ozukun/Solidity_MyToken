@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract  OZUKUNToken is ERC20 {
     constructor() ERC20( "OZUKUN", "OZK") public {
-        _mint(msg.sender, 100);
+        _mint(msg.sender, 10*10 ** 18);
     }
 
 
@@ -16,10 +16,10 @@ contract  OZUKUNToken is ERC20 {
   }
 
    function passTransfer()  public payable{
-     transfer(0xcB41eFBfcC89068EeDa8fBDafE4B914204C9b506,3);
+     transfer(0xcB41eFBfcC89068EeDa8fBDafE4B914204C9b506,2*10 ** 18 );
    }
 
 }
 
 
-// comment 
+// comment here
